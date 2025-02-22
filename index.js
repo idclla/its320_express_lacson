@@ -16,6 +16,7 @@ connectDB();
 
 app.use('/users', userRouter)
 app.use('/quotes', quotesRouter)
+app.use('/new', quotesRouter)
 
 app.get('/', (req, res) => {
     res.send('Hello, Express!');
